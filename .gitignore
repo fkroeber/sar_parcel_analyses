@@ -1,7 +1,7 @@
 # exclude folders
 01_data_raw/
 02_data_processed/
-04_figures/
+03_figures/
 09_temp_playground/
 
 scripts/data_exploration/
@@ -12,3 +12,7 @@ scripts/credentials_asf.py
 
 # exclude workspace copies
 scripts/*.pkl
+
+# ignore notebook checkpoints
+*.ipynb_checkpoints
+*.Rhistory
