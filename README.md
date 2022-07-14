@@ -10,7 +10,9 @@ Independent from that but supporting, ...
 These scripts are working on their own and can be used for different purposes. However, they were created and primarily used in the context of field-based analyses (phenology and crop classification). Thus, alongside with the above-mentioned scripts there is a script called "xy.z" reading in the pre-processed data and analysing it subsequently by creating time-series curves and performing classifications using the random forest classifier. 
 
 # Note
-* processing requirements (CPU, storage, etc) - tests on larger AoIs not performed, no reliability for that
+* processing requirements (CPU, storage, etc)
+* tests on larger AoIs not performed, no reliability for that
+* subswath test, multi-swath should be feasible -> overlapping multi scenes requires further effort
 * performance tests
 
 Visualisation of some outputs/For further information see (blogpost)
