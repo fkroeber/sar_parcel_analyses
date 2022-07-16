@@ -13,6 +13,9 @@ scripts/credentials_asf.py
 # exclude workspace copies
 scripts/*.pkl
 
+# ignore R html notebook version
+scripts/*.nb.html
+
 # ignore notebook checkpoints
 *.ipynb_checkpoints
 *.Rhistory

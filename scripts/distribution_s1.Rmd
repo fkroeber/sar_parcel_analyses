@@ -25,7 +25,17 @@ packages = c('fasterize', 'getSpatialData', 'leaflet', 'raster', 'rgeos', 'sf', 
 available_packages = lapply(packages, require, character.only = T)
 #install.packages(packages[!unlist(available_packages)])
 #update.packages()
-#.libPaths()
+
+## check which packages are actually used
+## convert to R file
+# path = "..."
+# document_name = "distribution_s1_austria.Rmd"
+# document_name_R = paste0(unlist(strsplit(document_name, "\\."))[1], ".R")
+# 
+# library(NCmisc)
+# knitr::purl(file.path(path, "distribution_s1_austria.Rmd"), 
+#             file.path(path, document_name_R))
+# list.functions.in.file(file.path(path, document_name_R), alphabetic = TRUE)
 ```
 
 ```{r}
@@ -324,16 +334,5 @@ fields_nogeom %>%
                    y = SL_FLAECHE_BRUTTO_HA))
 ```
 
-```{r}
-### check which packages are actually used
-# path = "C://Users/felix/Desktop/Adv_Rs_project/03_analyses_scripts"
-# document_name = "distribution_s1_austria.Rmd"
-# document_name_R = paste0(unlist(strsplit(document_name, "\\."))[1], ".R")
-# 
-# library(NCmisc)
-# knitr::purl(file.path(path, "distribution_s1_austria.Rmd"), 
-#             file.path(path, document_name_R))
-# list.functions.in.file(file.path(path, document_name_R), alphabetic = TRUE)
-```
 
 
