@@ -23,6 +23,7 @@ Note that the python scripts are designed to be used on there own. The notebook 
 </br>
 
 The above-mentioned scripts are working on their own and can be used for different purposes. However, they were created and primarily used in the context of field-based analyses (phenology and crop classification). Thus, alongside with the above-mentioned scripts there is a script called `field_analyses.ipynb` which relies on the pre-processed data and performs subsequent analyses by creating time-series curves and performing classifications using the random forest classifier. To give a glimpse on what outputs can be expected, timeseries plots created for winter barley, winter wheat and oat are displayed below.
+
 </br>
 
 ![image](figures/timeseries_crops.png)
