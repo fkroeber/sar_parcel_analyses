@@ -22,7 +22,7 @@ def name_coh_prod(file_1, file_2):
     sat = os.path.split(file_1)[-1].split("_")[0]
     abs_orbit = os.path.split(file_1)[-1].split("_")[7]
     rel_orbit = convert_abs_rel_orbit(abs_orbit, sat)
-    name = f"coh_VV_VH_{rel_orbit}_{time_1}_{time_2}"
+    name = f"coh_VH_VV_{rel_orbit}_{time_1}_{time_2}"
     return name
 
 
